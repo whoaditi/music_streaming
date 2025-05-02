@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Irish+Grover&display=swap');
+
+.top-artists-section {
+  padding: 40px 40px 20px;
+  overflow: auto;
+}
+  
+  .top-artists-section h2 {
+    font-size: 1.5rem;
+    font-family: 'Inria Serif', sans-serif;
+    margin-bottom: 16px;
+    color: white;
+  }
+  
+  .artist-cards-container {
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+  }
+  
+  .artist-cards-container::-webkit-scrollbar {
+    display: none; 
+  }
+  
+  .artist-card {
+    flex:0 0 auto;
+    margin-top: 5px;
+    text-align: center;
+    width: 200px;
+  }
+  
+  .artist-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+    transition: transform 0.3s ease;
+  }
+  
+  .artist-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .artist-name {
+    margin-top: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .artist-scroll {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px 0;
+    gap: 20px;
+    scrollbar-width: thin;
+  }
+  
+  

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Irish+Grover&display=swap');
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4b6cc6;
+    padding: 10px 40px;
+    height: 53px;
+  }
+  
+  .header-left .logo {
+    color: #fff;
+    font-family: 'Irish Grover', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .header-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+  }
+  
+  .search-bar {
+    width: 100%;
+    max-width: 400px;
+    background-color: #a9bffb;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    font-size: 1.1rem;
+    outline: none;
+  }
+
+  input::placeholder {
+    color: white;
+    font-family: sans-serif;
+    font-size:15px;
+    opacity: 1;
+  }
+  
+  .header-right a {
+    margin-left: 20px;
+    font-family: 'Inria sans', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+  }
+  
+  .header-right a:hover {
+    color: #55aaff;
+  }
+  
