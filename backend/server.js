@@ -1,13 +1,21 @@
 import express from "express"
 import cors from "cors"
 import 'dotenv/config'
+import songrouter from "./src/routes/songroutes.js";
+import connectDB from "./src/config/monogodb.js";
 
 const app =express();
 const port = process.env.PORT || 4000;
+connectDB();
 
 
 app.use(express.json());
 app.use(cors());
+
+
+
+app.use("/api/song",songrouter);
+
 
 app.get('/',(req,res)=> res.send("API working"))
 
